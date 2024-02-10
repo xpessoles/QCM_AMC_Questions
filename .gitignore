@@ -1,0 +1,10 @@
+*.pdf
+*.amc
+*.aux
+*.bcf
+*.idx
+*.log
+*.gz
+*.cs
+*.blg
+*.bbl

@@ -1,0 +1,126 @@
+\element{ChainesCaracteres}{
+\begin{question}{str01} % genumsi nreveret
+	On a saisi le code suivant : \lstinline{mot = 'première'}. Quelle affirmation est vraie ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{mot[7]} vaut \lstinline{'e'}}
+	\mauvaise{\lstinline{mot[1]} vaut \lstinline{'p'}}
+	\mauvaise{\lstinline{len(mot)} vaut 7}
+	\mauvaise{\lstinline{len(mot)} vaut 6}
+	\end{reponses}
+	\end{multicols}
+\end{question}\\}
+
+\element{ChainesCaracteres}{
+\begin{question}{str02}  % genumsi nreveret
+	Quelle est le résultat de :  \lstinline{'orange'[-3] ?}
+\begin{multicols}{4}	
+	\begin{reponses}
+	\bonne{\lstinline{'n'}}
+	\mauvaise{\lstinline{'e'}}
+	\mauvaise{\lstinline{'g'}}
+	\mauvaise{\lstinline{Error : Negative index}}
+	\end{reponses}
+	\end{multicols}
+\end{question}\\}
+
+
+\element{ChainesCaracteres}{
+\begin{question}{str03}  % https://www.codingame.com/
+Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. Qu'affiche la ligne suivante : 
+\lstinline{print(texte[5])} ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{"a"}}
+	\mauvaise{\lstinline{"h"}}
+	\mauvaise{\lstinline{"s"}}
+	\mauvaise{\lstinline{"Un ch"}}
+	\end{reponses}
+	\end{multicols}
+\end{question}\\}
+
+\element{ChainesCaracteres}{
+\begin{question}{str04}  % https://www.codingame.com/
+Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. Qu'affiche la ligne suivante : 
+\lstinline{print(texte[:5])} ?
+%\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{"Un ch"}}
+	\mauvaise{\lstinline{"Un cha"}}
+	\mauvaise{\lstinline{"Un chasseur sachant chasser doit"}}
+	\mauvaise{\lstinline{"Un chasseur sachant chasser doit savoir chasser sans son chien."}}
+	\end{reponses}
+%	\end{multicols}
+\end{question}\\}
+
+\element{ChainesCaracteres}{
+\begin{question}{str05}  % https://www.codingame.com/
+Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. Qu'affiche la ligne suivante : 
+\lstinline{print(texte[5:10])} ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{"asseu"}}
+	\mauvaise{\lstinline{"hasseu"}}
+	\mauvaise{\lstinline{"asseur"}}
+	\mauvaise{\lstinline{"ar"}}
+	\end{reponses}
+	\end{multicols}
+\end{question}\\}
+
+\element{ChainesCaracteres}{
+\begin{question}{str06}  % https://www.codingame.com/
+Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. Qu'affiche la ligne suivante : 
+\lstinline{print(texte[:2]+texte[6:8])} ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{"Unss"}}
+	\mauvaise{\lstinline{"Un ss"}}
+	\mauvaise{\lstinline{"Unsse"}}
+	\mauvaise{\lstinline{"Un sse"}}
+	\end{reponses}
+	\end{multicols}
+\end{question}\\}
+
+\element{ChainesCaracteres}{
+\begin{question}{str07}  % https://www.codingame.com/
+Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. 
+
+Que faut-il mettre à la place des ... pour afficher "sachant"?
+%\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{print(texte[12:19]}}
+	\mauvaise{\lstinline{print(texte[12:18]}}
+	\mauvaise{\lstinline{print(texte[11:18]}}
+	\mauvaise{\lstinline{print(texte[12]+texte[18])}}
+	\end{reponses}
+%\end{multicols}
+\end{question}\\}
+
+
+\element{ChainesCaracteres}{\begin{question}{str08}  % genumsi planchet.d
+Suite au programme ci-dessous, il faut afficher le message suivant : \texttt{je m'appelle prenom et j'ai age ans}.
+\lstinputlisting{str_08.py}
+Quelle instruction doit-on choisir ?
+
+	\begin{reponses}
+	\bonne{\lstinline{print("je m'appelle "+prenom+" et j'ai"+str(age)+" ans")}} 
+	\mauvaise{\lstinline{print("je m'appelle "+int(prenom)+" et j'ai "+int(age)+ "ans")}}
+	\mauvaise{\lstinline{print("je m'appelle "+prenom+" et j'ai "+ age+ "ans")}}
+ 	\mauvaise{\lstinline{print("je m'appelle "+prenom+" et j'ai "+int(age)+ "ans")}}
+	\end{reponses}
+\end{question}\\}
+
+
+%\begin{question}{str}  % genumsi nreveret
+%
+%\begin{multicols}{4}	
+%	\begin{reponses}	
+%	\bonne{}
+%	\mauvaise{}
+%	\mauvaise{}
+%	\mauvaise{}
+%	\end{reponses}
+%	\end{multicols}
+%\end{question}
+%}
+%

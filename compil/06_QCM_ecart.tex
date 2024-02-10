@@ -1,0 +1,123 @@
+\documentclass[a4paper]{article}
+
+% bloc : évite un changement de page
+% completemulti : ajoute une case : aucune bonne réponse
+%\newcommand{\repRel}{../..}
+%\input{\repRel/Style/packages_v2}
+%%\input{\repRel/Style/new_style}
+%\input{\repRel/Style/macros_SII}
+%\input{\repRel/Style/environment_v2}
+
+\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
+%\usepackage[francais,bloc,completemulti]{automultiplechoice} 
+\usepackage{amsmath}
+% ensemble : feuille de questions et feuille de réponse séparées
+
+\usepackage{multicol}
+
+%% Pour le python %%
+\usepackage{listingsutf8}
+
+\lstset{language=Python,
+  inputencoding=utf8/latin1,
+  breaklines=true,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+  upquote = true,
+  columns=fullflexible,
+  backgroundcolor=\color{gray!10},frame=leftline,rulecolor=\color{gray}}  
+  
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstset{
+     literate=%
+         {é}{{\'e}}1    
+         {è}{{\`e}}1    
+         {ê}{{\^e}}1    
+         {à}{{\`a}}1
+         {â}{{\^a}}1		 
+         {ô}{{\^o}}1    
+         {ù}{{\`u}}1    
+         {î}{{\^i}}1    
+}
+\lstset{inputpath=code}
+
+\usepackage{siunitx}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
+
+\geometry{hmargin=2cm,headheight=2cm,headsep=.3cm,footskip=1cm,top=2.5cm,bottom=2cm}
+
+\begin{document}
+\AMCrandomseed{233893}
+\setdefaultgroupmode{withoutreplacement} % Mélange des questions groupées
+
+\graphicspath{{../Banque_SI/03_hyperstatisme/images/}{../Banque_SI/04_transmetteurs/images/}}
+\input{../Banque_SI/03_hyperstatisme/03_hyperstatisme.tex}
+\input{../Banque_SI/04_transmetteurs/04_transmetteurs.tex}
+\input{../Banque_SI/05_inertieeq/05_inertieeq.tex}
+\graphicspath{{../Banque_SI/06_ecart_statique_trainage/images/}}
+\input{../Banque_SI/06_ecart_statique_trainage/06_ecart_statique_trainage.tex}
+
+
+
+
+
+\exemplaire{2}{
+% Entetes sujet
+\noindent{\bf QCM -- Ecart}
+
+\vspace*{.5cm}
+% Questions
+\begin{multicols}{2}
+%\restituegroupe[6]{mob}
+%\restituegroupe[4]{hs}
+\restituegroupe[8]{ecart}
+\end{multicols}
+
+\AMCcleardoublepage
+
+
+\AMCdebutFormulaire
+% ENtetes
+{\large\bf Feuille de réponses :}
+%
+\vspace{.5cm}
+
+\begin{minipage}[c]{.45\linewidth}
+{\large\bf Noircir votre numéro personnel.}
+
+\vspace{.5cm}
+
+\AMCcodeGridInt[h]{etu}{1}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{.45\linewidth}
+\champnom{\fbox{
+\begin{minipage}{.9\linewidth}
+Nom et prénom :
+
+\vspace*{.5cm}\dotfill
+
+\vspace*{.5cm}\dotfill
+
+\vspace*{1mm}
+\end{minipage}
+}}
+\end{minipage}
+
+%%%%%%%
+
+\vspace*{.5cm}
+Pour répondre aux questions \textbf{noircir consciencieusement} la réponse sélectionnée. 
+\vspace*{.5cm}
+
+\formulaire
+\AMCcleardoublepage
+% 
+}
+
+\end{document}
